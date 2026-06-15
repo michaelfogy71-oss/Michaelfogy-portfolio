@@ -991,4 +991,4 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.run(main, web_renderer=ft.WebRenderer.CANVAS_KIT)
+    ft.app(target=main, view=ft.AppView.WEB_BROWSER, web_renderer=ft.WebRenderer.CANVAS_KIT, port=int(__import__('os').environ.get('PORT', 8550)), host="0.0.0.0")
