@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: michael-portfolio
+    runtime: python
+    buildCommand: pip install -r requirements.txt flet-web
+    startCommand: python -m flet web main.py --port $PORT
